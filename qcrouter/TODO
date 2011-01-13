@@ -1,0 +1,5 @@
+up to:	wanted:
+======	===========================================================
+0.2	do several (no more) attempts to reconnect on disconnection
+	(only the peer which initially connected, has to reconnect)
+

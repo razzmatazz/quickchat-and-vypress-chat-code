@@ -1,0 +1,11 @@
+AC_INIT(src/qcrouter.c)
+
+PACKAGE=qcrouter
+VERSION=0.1
+AUTHOR=razzmatazz@mail.lt
+
+AM_INIT_AUTOMAKE($PACKAGE, $VERSION, $AUTHOR)
+
+AC_PROG_CC
+AC_OUTPUT(Makefile src/Makefile)
+
