@@ -1,0 +1,46 @@
+typedef struct _qcs_msg {
+	int msg;	// message id
+	int mode;	// user mode: QCS_MODE_ONLINE, QCS_MODE_CMDND, etc..
+	int watch_mode;	// watch mode: set/not set
+	char * src;	// source nick
+	char * dst;	// destination nick
+	char * text;
+	char * supp;	// supplement text
+	char * chan;	// channels '#Main#...#'
+} qcs_msg;
+
+int qcs_open(
+	int * link_id,
+	int proto_mode,			// QCS_PROTO_QC or QCS_PROTO_VYPRESS
+	const unsigned long * broadcasts,
+		// 0x0L terminated list of broadcast addresses
+		// (or 0xffffffffUL assumed if NULL)
+	unsigned short port );		// port to use(use defaults if=0)
+
+int qcs_close(
+	int link_id );
+
+int qcs_lasterr(
+	int link_id );
+
+int qcs_txsocket(
+	int link_id,
+	int * p_txsocket )
+int qcs_rxsocket(
+	int link_id,
+	int * p_rxsocket )
+
+int qcs_waitinput(
+	int link_id,
+	int timeout_ms )	// if timeout_ms==0, exit return state immed.
+int qcs_send(
+	int link_id,
+	const qcs_msg_t * msg )
+int qcs_recv(
+	int link_id,
+	qcs_msg_t * msg )
+
+	// creates/destroys message
+qcs_msg * qcs_newmsg();
+void qcs_deletemsg( qcs_msg * );
+
