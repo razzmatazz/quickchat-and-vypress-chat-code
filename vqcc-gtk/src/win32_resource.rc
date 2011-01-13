@@ -1,0 +1,6 @@
+/* $Id: win32_resource.rc,v 1.1 2004/09/28 22:02:25 bobas Exp $ */
+
+#include "win32_resource.h"
+
+VQCC_GTK_ICON		ICON "../pixmaps/winicon16.ico"
+VQCC_GTK_ICON_ACT	ICON "../pixmaps/winicon16-act.ico"

@@ -1,0 +1,33 @@
+# vqcc-gtk:
+#	makefile for win32 targets
+#
+# $Id: Makefile.mingw,v 1.5 2005/01/04 00:07:41 bobas Exp $
+
+DISTVERSION=$(shell gawk '{if($$2=="VERSION"){print $$3}}' config.h.mingw)
+DISTDIR=vqcc-gtk-$(DISTVERSION)-win32
+DISTFILE=$(DISTDIR).zip
+DISTPIXMAPDIR=$(DISTDIR)/pixmaps
+
+src/vqcc-gtk.exe: config.h pixmaps/stockpixbufs.h pixmaps/traypixbufs.h
+	$(MAKE) -C src -f Makefile.mingw
+
+config.h: config.h.mingw
+	cp config.h.mingw config.h
+
+pixmaps/traypixbufs.h pixmaps/stockpixbufs.h: 
+	make -C pixmaps -f Makefile.mingw
+
+clean:
+	rm -f config.h
+	make -C pixmaps -f Makefile.mingw clean
+	make -C src -f Makefile.mingw clean
+
+dist: src/vqcc-gtk.exe
+	rm -f $(DISTFILE)
+	rm -rf $(DISTDIR)
+	mkdir $(DISTDIR)
+	strip src/vqcc-gtk.exe
+	cp AUTHORS ChangeLog COPYING CREDITS README TODO $(DISTDIR)
+	cp src/vqcc-gtk.exe $(DISTDIR)
+	zip -9 -r $(DISTFILE) $(DISTDIR)
+	rm -rf $(DISTDIR)

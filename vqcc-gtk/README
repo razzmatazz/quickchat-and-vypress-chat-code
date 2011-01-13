@@ -1,0 +1,48 @@
+vqcc-gtk 0.5 README
+(c) Saulius Menkevicius <bob@nulis.lt>
+
+CONTENTS
+=================
+1. What is vqcc-gtk
+2. Support for MS Windows
+3. Building off the CVS repository
+4. FAQ
+
+
+1. What is vqcc-gtk
+----------------------------------
+Vqcc-gtk is a chat application written in C for the GTK+ toolkit, primarily
+used in small LAN's. Based on quickChat/Vypress Chat (TM) for Windows
+(from Vypress Research) and is licensed under the GPL.
+
+The application supports both quickChat and Vypress Chat(TM) protocols and
+hopefully is compatible enough to substitute those applications when using
+Linux, FreeBSD or any other *NIX desktop. You need no server to run, however
+it is not possible to communicate outside your LAN (or subnet).
+
+2. Support for MS Windows
+----------------------------------
+<<To be written>>
+
+3. Building off the CVS repository
+----------------------------------
+In order to compile the package from cvs you'll need:
+	* make (almost any version);
+	* automake-1.5 +;
+	* autoconf-2.53 +;
+	* development packages for glib-2.x and gtk-2.x;
+	* a decent C compiler toolset (preferably GCC);
+
+Just run the `./autogen.sh' and then `make'. You may need to modify
+./configure parameters in autogen.sh as it may not be prepared for your
+system configuration.
+
+4. FAQ
+----------------------------------
+Q: What does the name "vqcc-gtk" stands for?
+A: It was conceived as (V)ypresschat & (Q)uick(C)hat (C)lient for the GTK+
+   toolkit. Kinda weird, but all the good names are taken already(tm).
+
+Q: GNOME (or GTK+) sucks, I prefer KDE (QT).
+A: Take a look at VyQChat (http://www.nongnu.org/vyqchat/) which is a clean
+   QT application.

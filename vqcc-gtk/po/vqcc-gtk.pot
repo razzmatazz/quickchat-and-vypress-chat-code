@@ -1,0 +1,944 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-01-09 23:30+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/main.c:143
+#, c-format
+msgid "%s has sent you a beep alert"
+msgstr ""
+
+#: src/main.c:153
+#, c-format
+msgid "%s has received your beep alert"
+msgstr ""
+
+#: src/main.c:160
+msgid "Can not set nickname to an empty string"
+msgstr ""
+
+#: src/main.c:177
+#, c-format
+msgid "Renamed to %s"
+msgstr ""
+
+#: src/main.c:186
+#, c-format
+msgid "Changed mode to %s"
+msgstr ""
+
+#: src/main.c:195
+msgid "Nickname"
+msgstr ""
+
+#: src/main.c:197
+msgid "User mode"
+msgstr ""
+
+#: src/main.c:199
+msgid "Log to current page"
+msgstr ""
+
+#: src/main.c:201
+msgid "Persistent channels"
+msgstr ""
+
+#: src/main.c:203
+msgid "Popup timeout in miliseconds"
+msgstr ""
+
+#: src/main.c:228
+#, c-format
+msgid "Guest_%hu"
+msgstr ""
+
+#: src/main.c:237 src/gui.c:672
+msgid "Status"
+msgstr ""
+
+#: src/main.c:238
+#, c-format
+msgid "%s version %s"
+msgstr ""
+
+#: src/main.c:240
+msgid "This program comes with ABSOLUTELY NO WARRANTY. Licensed under the GPL."
+msgstr ""
+
+#: src/main.c:242
+msgid ""
+"This is free software, and you are welcome to redistribute it under certain "
+"conditions."
+msgstr ""
+
+#: src/cmd_proc.c:32
+msgid "Command: "
+msgstr ""
+
+#: src/cmd_proc.c:159
+#, c-format
+msgid "/info: \"%s\" is unknown user"
+msgstr ""
+
+#. no nickname specified
+#: src/cmd_proc.c:168
+msgid "/info: no nickname specified"
+msgstr ""
+
+#: src/cmd_proc.c:189
+#, c-format
+msgid "/query: \"%s\" is unknown user"
+msgstr ""
+
+#. no nickname specified
+#: src/cmd_proc.c:198
+msgid "/query: no nickname specified"
+msgstr ""
+
+#. channel name unspecified
+#: src/cmd_proc.c:212
+msgid "/join: Invalid/unspecified channel"
+msgstr ""
+
+#: src/cmd_proc.c:266
+msgid "/topic: topic can be set on channel sessions only"
+msgstr ""
+
+#. "empty" cmd, e.g. `/ mistype param1 param2',
+#. * and not `/correct param1 param2'
+#.
+#: src/cmd_proc.c:434
+msgid "Invalid (empty) command \"/\""
+msgstr ""
+
+#: src/cmd_proc.c:443
+#, c-format
+msgid "Invalid/unknown command \"%s\""
+msgstr ""
+
+#: src/gui_misc.c:102
+msgid "_Send"
+msgstr ""
+
+#: src/gui_misc.c:103
+msgid "_Reply"
+msgstr ""
+
+#: src/gui_misc.c:104
+msgid "_Quote"
+msgstr ""
+
+#: src/gui_ulist.c:156
+msgid "Open chat"
+msgstr ""
+
+#: src/gui_ulist.c:163
+msgid "<b>Send message</b>"
+msgstr ""
+
+#. "Beep"
+#: src/gui_ulist.c:168
+msgid "Beep"
+msgstr ""
+
+#: src/gui_ulist.c:174
+msgid "Ignore"
+msgstr ""
+
+#: src/gui_ulist.c:179
+msgid "Unignore"
+msgstr ""
+
+#: src/gui_ulist.c:187
+msgid "Remove unreplied"
+msgstr ""
+
+#: src/gui_ulist.c:218
+msgid "<b>Preferences..</b>"
+msgstr ""
+
+#: src/gui_ulist.c:248
+msgid "Remove all unreplied"
+msgstr ""
+
+#: src/gui_ulist.c:261
+msgid "Refresh list"
+msgstr ""
+
+#: src/gui_ulist.c:395
+msgid "day"
+msgstr ""
+
+#: src/gui_ulist.c:395
+msgid "days"
+msgstr ""
+
+#: src/gui_ulist.c:396
+msgid "hour"
+msgstr ""
+
+#: src/gui_ulist.c:396
+msgid "hours"
+msgstr ""
+
+#: src/gui_ulist.c:397
+msgid "minute"
+msgstr ""
+
+#: src/gui_ulist.c:397
+msgid "minutes"
+msgstr ""
+
+#: src/gui_ulist.c:398
+msgid "second"
+msgstr ""
+
+#: src/gui_ulist.c:398
+msgid "seconds"
+msgstr ""
+
+#. show my channels
+#: src/gui_ulist.c:434 src/gui_ulist.c:505
+msgid ""
+"\n"
+"<b>On channels:</b> "
+msgstr ""
+
+#: src/gui_ulist.c:481
+#, c-format
+msgid ""
+"\n"
+"<b>Hostname:</b> %s"
+msgstr ""
+
+#: src/gui_ulist.c:492
+#, c-format
+msgid ""
+"\n"
+"<b>Idle for:</b> %s"
+msgstr ""
+
+#: src/gui_ulist.c:498
+#, c-format
+msgid ""
+"\n"
+"<b>IP address:</b> %d.%d.%d.%d"
+msgstr ""
+
+#: src/gui_ulist.c:551
+msgid ""
+"\n"
+"<span foreground=\"#902020\"><i>User is not responding.</i></span>"
+msgstr ""
+
+#. write the new topic onto the channel page
+#: src/sess.c:100
+#, c-format
+msgid "Topic: \"%s\""
+msgstr ""
+
+#: src/sess.c:202
+#, c-format
+msgid "%s has changed mode to %s"
+msgstr ""
+
+#: src/sess.c:298
+msgid "%s joins %h"
+msgstr ""
+
+#: src/sess.c:298
+msgid "%s left %h"
+msgstr ""
+
+#: src/sess.c:321
+#, c-format
+msgid "%s has opened private chat"
+msgstr ""
+
+#: src/sess.c:327
+#, c-format
+msgid "%s has closed private chat"
+msgstr ""
+
+#: src/sess.c:370
+msgid "Time-stamp channel text"
+msgstr ""
+
+#: src/sess.c:373
+msgid "Time-stamp private text"
+msgstr ""
+
+#: src/sess.c:376
+msgid "Time-stamp status text"
+msgstr ""
+
+#: src/sess.c:379
+msgid "List of channels that trigger popup on new text"
+msgstr ""
+
+#: src/sess.c:382
+msgid "Suppress rename messages"
+msgstr ""
+
+#: src/sess.c:385
+msgid "Suppress mode change messages"
+msgstr ""
+
+#: src/sess.c:388
+msgid "Suppress join/leave messages"
+msgstr ""
+
+#: src/sess.c:502
+#, c-format
+msgid "Chat with %n has been opened"
+msgstr ""
+
+#: src/sess.c:505
+msgid "Joined channel %h"
+msgstr ""
+
+#: src/gui.c:108
+#, c-format
+msgid "Network users: %d"
+msgstr ""
+
+#. the "Chat" submenu
+#.
+#: src/gui.c:169
+msgid "_Chat"
+msgstr ""
+
+#: src/gui.c:173 src/gui.c:189
+msgid "_Close"
+msgstr ""
+
+#. the "Channel" submenu
+#.
+#: src/gui.c:179
+msgid "_Channel"
+msgstr ""
+
+#: src/gui.c:183
+msgid "Set _topic"
+msgstr ""
+
+#. the "View" submenu
+#.
+#: src/gui.c:195
+msgid "_View"
+msgstr ""
+
+#: src/gui.c:199
+msgid "Show _menu bar"
+msgstr ""
+
+#: src/gui.c:204
+msgid "Show _topic bar"
+msgstr ""
+
+#. the "Settings" submenu
+#.
+#: src/gui.c:211
+msgid "_Settings"
+msgstr ""
+
+#: src/gui.c:215
+msgid "_Channels.."
+msgstr ""
+
+#: src/gui.c:218
+msgid "_Ignore list.."
+msgstr ""
+
+#: src/gui.c:224
+msgid "_Preferences.."
+msgstr ""
+
+#. the "Help" submenu
+#.
+#: src/gui.c:230
+msgid "_Help"
+msgstr ""
+
+#: src/gui.c:234
+msgid "_About vqcc-gtk"
+msgstr ""
+
+#. user list
+#: src/gui.c:522
+msgid "Network Users"
+msgstr ""
+
+#: src/gui.c:669
+#, c-format
+msgid "Private chat with %s"
+msgstr ""
+
+#: src/gui.c:747
+msgid "Keep window size"
+msgstr ""
+
+#: src/gui.c:749
+msgid "Window size"
+msgstr ""
+
+#: src/gui.c:751
+msgid "Present main window when opening private"
+msgstr ""
+
+#: src/gui.c:753
+msgid "Maximum length of the window title"
+msgstr ""
+
+#: src/gui.c:754
+msgid "Show topic bar"
+msgstr ""
+
+#: src/gui.c:755
+msgid "Show menu bar"
+msgstr ""
+
+#. change title of the message dialog
+#: src/gui_msg.c:196 src/gui_msg.c:312
+#, c-format
+msgid "Message to %s"
+msgstr ""
+
+#: src/gui_msg.c:309
+msgid "Mass message"
+msgstr ""
+
+#: src/gui_msg.c:317
+#, c-format
+msgid "Mass message from %s [%s]"
+msgstr ""
+
+#: src/gui_msg.c:318
+#, c-format
+msgid "Message from %s [%s]"
+msgstr ""
+
+#. add option expander
+#: src/gui_msg.c:422
+msgid "_Message options"
+msgstr ""
+
+#. add option to save message dialog window size
+#: src/gui_msg.c:440
+msgid "Save message dialog size"
+msgstr ""
+
+#: src/gui_msg.c:532
+#, c-format
+msgid "%s has received your message (%s)"
+msgstr ""
+
+#: src/gui_msg.c:537
+#, c-format
+msgid "%s has received your message"
+msgstr ""
+
+#: src/gui_msg.c:563
+#, c-format
+msgid "Message from %s: %s"
+msgstr ""
+
+#: src/gui_msg.c:671
+msgid "Show messages in windows"
+msgstr ""
+
+#: src/gui_msg.c:673
+msgid "Maximum message windows"
+msgstr ""
+
+#: src/gui_msg.c:675
+msgid "CTRL-Enter sends message"
+msgstr ""
+
+#: src/gui_msg.c:677
+msgid "Message dialog size"
+msgstr ""
+
+#: src/gui_msg.c:679
+msgid "Receive message when in Offline or DND mode"
+msgstr ""
+
+#: src/idle.c:194
+msgid "Auto-away timeout in minutes"
+msgstr ""
+
+#: src/idle.c:196
+msgid "Auto-offline timeout in minutes"
+msgstr ""
+
+#: src/idle.c:199
+msgid "Enter auto-away/auto-offline modes"
+msgstr ""
+
+#: src/user.c:307
+msgid "User list update period in seconds"
+msgstr ""
+
+#: src/user.c:309
+msgid "Keep unreplied users on the list"
+msgstr ""
+
+#: src/user.c:477
+msgid "Normal"
+msgstr ""
+
+#: src/user.c:478
+msgid "DND"
+msgstr ""
+
+#: src/user.c:479
+msgid "Away"
+msgstr ""
+
+#: src/user.c:480
+msgid "Offline"
+msgstr ""
+
+#: src/user.c:481
+msgid "*Dead*"
+msgstr ""
+
+#: src/user.c:482
+msgid "Invisible"
+msgstr ""
+
+#: src/user.c:484
+msgid "(undefined)"
+msgstr ""
+
+#: src/gui_channel.c:444
+msgid "Channels"
+msgstr ""
+
+#: src/gui_channel.c:492
+msgid "_Update"
+msgstr ""
+
+#: src/gui_channel.c:497
+msgid "_Join"
+msgstr ""
+
+#: src/gui_channel.c:549
+msgid "Channel name"
+msgstr ""
+
+#: src/gui_channel.c:560
+msgid "Persistent"
+msgstr ""
+
+#: src/gui_channel.c:568
+msgid "Important"
+msgstr ""
+
+#: src/gui_page.c:161
+msgid "Set topic.. [CTRL-T]"
+msgstr ""
+
+#: src/gui_page.c:188
+msgid "Channels.."
+msgstr ""
+
+#: src/gui_page.c:194
+msgid "Ignore list.."
+msgstr ""
+
+#: src/gui_page.c:199 src/gui_tray.c:199
+msgid "Preferences.."
+msgstr ""
+
+#: src/gui_page.c:206 src/gui_tray.c:208
+msgid "Quit"
+msgstr ""
+
+#: src/gui_page.c:540
+msgid "Page tab position"
+msgstr ""
+
+#: src/gui_page.c:630
+msgid "_Top"
+msgstr ""
+
+#: src/gui_page.c:631
+msgid "_Bottom"
+msgstr ""
+
+#: src/gui_page.c:632
+msgid "_Left"
+msgstr ""
+
+#: src/gui_page.c:633
+msgid "_Right"
+msgstr ""
+
+#: src/gui_page.c:650
+msgid "Close page [CTRL-W]"
+msgstr ""
+
+#. "[*] Persistent"
+#: src/gui_page.c:657
+msgid "_Persistent"
+msgstr ""
+
+#. [*] Important
+#: src/gui_page.c:673
+msgid "_Important"
+msgstr ""
+
+#. automatic detection button
+#: src/gui_config.c:447
+msgid "Detect available networks.."
+msgstr ""
+
+#. add page notebook tab position option
+#. * (the order should be the same as in `enum GtkPositionType')
+#.
+#: src/gui_config.c:607
+msgid "Left"
+msgstr ""
+
+#: src/gui_config.c:608
+msgid "Right"
+msgstr ""
+
+#: src/gui_config.c:609
+msgid "Top"
+msgstr ""
+
+#: src/gui_config.c:610
+msgid "Bottom"
+msgstr ""
+
+#. create config dlg and setup signals
+#: src/gui_config.c:962 src/prefs.c:38
+msgid "Preferences"
+msgstr ""
+
+#.
+#. * Manual port/network entry frame
+#.
+#: src/gui_config.c:1030 src/gui_netselect_dlg.c:676
+msgid "Network settings"
+msgstr ""
+
+#: src/gui_config.c:1031
+msgid "User list"
+msgstr ""
+
+#: src/gui_config.c:1032
+msgid "Pages"
+msgstr ""
+
+#: src/gui_config.c:1033
+msgid "Messages"
+msgstr ""
+
+#: src/gui_config.c:1034
+msgid "Tray icon"
+msgstr ""
+
+#: src/gui_config.c:1035
+msgid "Idle"
+msgstr ""
+
+#: src/gui_config.c:1036
+msgid "Miscellaneous"
+msgstr ""
+
+#: src/gui_topic_dlg.c:127
+msgid "Topic:"
+msgstr ""
+
+#: src/gui_topic_dlg.c:167
+#, c-format
+msgid "Topic for #%s"
+msgstr ""
+
+#: src/gui_netselect_dlg.c:521
+msgid "Network detection and configuration"
+msgstr ""
+
+#: src/gui_netselect_dlg.c:534
+msgid "Detected networks"
+msgstr ""
+
+#.
+#. * "Automatic scan" frame
+#.
+#: src/gui_netselect_dlg.c:580
+msgid "Automatic scan"
+msgstr ""
+
+#: src/gui_netselect_dlg.c:623
+msgid "Scan UDP ports from"
+msgstr ""
+
+#: src/gui_netselect_dlg.c:635
+msgid "to (including)"
+msgstr ""
+
+#: src/gui_netselect_dlg.c:665
+msgid "Detection settings"
+msgstr ""
+
+#: src/gui_about_dlg.c:61
+msgid "Lithuanian"
+msgstr ""
+
+#: src/gui_about_dlg.c:62
+msgid "Russian"
+msgstr ""
+
+#: src/gui_about_dlg.c:122
+msgid "About vqcc-gtk"
+msgstr ""
+
+#. add about text
+#: src/gui_about_dlg.c:187
+msgid ""
+"vqcc-gtk is a chat application written in C for the GTK+ toolkit, primarily "
+"used in small LAN's. Based on quickChat/Vypress Chat (TM) for Windows (from "
+"Vypress Research) and is licensed under the GPL.\n"
+"\n"
+msgstr ""
+
+#. add authors
+#: src/gui_about_dlg.c:194
+msgid "Authors:\n"
+msgstr ""
+
+#. add translator info
+#: src/gui_about_dlg.c:211
+msgid ""
+"\n"
+"Translators:\n"
+msgstr ""
+
+#: src/net.c:44
+msgid "Network"
+msgstr ""
+
+#: src/net.c:46
+msgid ""
+"Charset encoding/decoding error; please check \"Network charset\" under the "
+"\"Network\" on the Preferences dialog"
+msgstr ""
+
+#: src/net.c:254
+#, c-format
+msgid "host info request from %s"
+msgstr ""
+
+#: src/net.c:274
+msgid "..replied to info request"
+msgstr ""
+
+#: src/net.c:348
+#, c-format
+msgid "%s has sent a mass message however you are in %s mode"
+msgstr ""
+
+#: src/net.c:349
+#, c-format
+msgid "%s has sent you a message however you are in %s mode"
+msgstr ""
+
+#: src/net.c:360
+#, c-format
+msgid "%s has sent a mass message however you have blocked them"
+msgstr ""
+
+#: src/net.c:830
+#, c-format
+msgid "Charset encoding \"%s\" is invalid or not supported on this system"
+msgstr ""
+
+#: src/net.c:916
+msgid "Network type"
+msgstr ""
+
+#: src/net.c:918
+msgid "Network port"
+msgstr ""
+
+#: src/net.c:920
+msgid "Network is configured"
+msgstr ""
+
+#: src/net.c:922
+msgid "Network broadcast mask"
+msgstr ""
+
+#: src/net.c:924
+msgid "Use multicast networking"
+msgstr ""
+
+#: src/net.c:926
+msgid "Network multicast address"
+msgstr ""
+
+#: src/net.c:928
+msgid "Verbosely report network events"
+msgstr ""
+
+#: src/net.c:930
+msgid "Notify channel users on join/leave"
+msgstr ""
+
+#: src/net.c:932
+msgid "Ignore mass messages"
+msgstr ""
+
+#: src/net.c:934
+msgid "Network charset encoding"
+msgstr ""
+
+#: src/net.c:936
+msgid "Reply to user information requests"
+msgstr ""
+
+#: src/net.c:938
+msgid "User information text"
+msgstr ""
+
+#: src/net.c:940
+msgid "User information text when away"
+msgstr ""
+
+#: src/net.c:942
+msgid "Ignored users"
+msgstr ""
+
+#: src/net.c:963
+msgid "User is away"
+msgstr ""
+
+#: src/net.c:1079
+#, c-format
+msgid "failed to connect to %s network on port %hd: %s"
+msgstr ""
+
+#: src/net.c:1082
+msgid ""
+"check if there are any programs running on the same port and your firewall "
+"settings"
+msgstr ""
+
+#: src/net.c:1097
+#, c-format
+msgid "connected to %s network on port %hd"
+msgstr ""
+
+#: src/gui_ignore.c:340 src/gui_ignore.c:354
+msgid "Ignore list"
+msgstr ""
+
+#: src/gui_ignore.c:379
+msgid "_Add"
+msgstr ""
+
+#: src/gui_ignore.c:385
+msgid "_Remove"
+msgstr ""
+
+#: src/gui_ignore.c:391
+msgid "_Clear list"
+msgstr ""
+
+#. "Send message to >" submenu
+#: src/gui_tray.c:182
+msgid "Message to"
+msgstr ""
+
+#. "Change mode to >" submenu
+#: src/gui_tray.c:191
+msgid "Set mode"
+msgstr ""
+
+#: src/gui_tray.c:388
+msgid "Enable system tray icon"
+msgstr ""
+
+#: src/gui_tray.c:390
+msgid "Tray blinks when someone joins/leaves a channel"
+msgstr ""
+
+#: src/gui_tray.c:392
+msgid "Tray blinks on new channel text"
+msgstr ""
+
+#: src/gui_tray.c:394
+msgid "Tray blinks on new private text"
+msgstr ""
+
+#: src/gui_tray.c:396
+msgid "Tray blinks on new status text"
+msgstr ""
+
+#: src/gui_tray.c:398
+msgid "Tray blinks on channel topic change"
+msgstr ""
+
+#: src/gui_tray.c:400
+msgid "Hide main window on startup"
+msgstr ""
+
+#: src/gui_tray.c:402
+msgid "Number of lines on tray icon tooltip"
+msgstr ""
+
+#: src/prefs.c:159
+msgid "Save settings on exit"
+msgstr ""
+
+#: src/prefs.c:375
+#, c-format
+msgid "Cannot save configuration settings to file \"%s\": %s"
+msgstr ""
+
+#: src/prefs.c:383
+#, c-format
+msgid "Configuration settings were stored in \"%s\""
+msgstr ""
+
+#: src/prefs.c:511 src/prefs.c:526
+#, c-format
+msgid "Could not read value for preference \"%s\""
+msgstr ""
+
+#: src/prefs.c:584
+#, c-format
+msgid "Error while reading configuration file \"%s\": %s"
+msgstr ""
+
+#: src/prefs.c:603
+#, c-format
+msgid "Error parsing configuration from \"%s\": %s"
+msgstr ""
+
+#: src/prefs.c:626
+#, c-format
+msgid "Cannot open configuration file \"%s\" for reading: %s"
+msgstr ""
+
+#: src/prefs.c:729
+#, c-format
+msgid "Unknown preference value \"%s\""
+msgstr ""

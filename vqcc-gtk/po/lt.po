@@ -1,0 +1,1047 @@
+# Lithuanian translation of vqcc-gtk.
+# Copyright (C) 2004 THE vqcc-gtk'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the vqcc-gtk package.
+# Saulius Menkevicius <razzmatazz@mail.lt>, 2004.
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: vqcc-gtk 0.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-01-09 23:30+0200\n"
+"PO-Revision-Date: 2004-12-24 04:26+0200\n"
+"Last-Translator: Saulius Menkevicius <razzmatazz@mail.lt>\n"
+"Language-Team: Lithuanian <komp_lt@konferencijos.lt>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-13\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/main.c:143
+#, c-format
+msgid "%s has sent you a beep alert"
+msgstr "%s gavo j�s� garsin� �sp�jim�"
+
+#: src/main.c:153
+#, c-format
+msgid "%s has received your beep alert"
+msgstr "%s gavo j�s� garsin� �sp�jim�"
+
+#: src/main.c:160
+msgid "Can not set nickname to an empty string"
+msgstr "Slapyvardis negali b�ti tu��ias"
+
+#: src/main.c:177
+#, c-format
+msgid "Renamed to %s"
+msgstr "Persivadinta slapyvard�iu %s"
+
+#: src/main.c:186
+#, c-format
+msgid "Changed mode to %s"
+msgstr "B�sena pakeista � %s"
+
+#: src/main.c:195
+msgid "Nickname"
+msgstr "Slapyvardis"
+
+#: src/main.c:197
+msgid "User mode"
+msgstr "Vartotojo b�sena"
+
+#: src/main.c:199
+msgid "Log to current page"
+msgstr "Prane�ti � dabartin� puslap�"
+
+#: src/main.c:201
+msgid "Persistent channels"
+msgstr "Pastov�s kanalai"
+
+#: src/main.c:203
+msgid "Popup timeout in miliseconds"
+msgstr "Informacinio langelio pasirodymo prad�ia (ms)"
+
+#: src/main.c:228
+#, c-format
+msgid "Guest_%hu"
+msgstr "Svecias_%hu"
+
+#: src/main.c:237 src/gui.c:672
+msgid "Status"
+msgstr "B�sena"
+
+#: src/main.c:238
+#, c-format
+msgid "%s version %s"
+msgstr "%s, versija %s"
+
+#: src/main.c:240
+msgid "This program comes with ABSOLUTELY NO WARRANTY. Licensed under the GPL."
+msgstr ""
+"�i programa pateikiama VISI�KAI BE JOKIOS GARANTIJOS, GNU GPL licenzijos "
+"s�lygomis."
+
+#: src/main.c:242
+msgid ""
+"This is free software, and you are welcome to redistribute it under certain "
+"conditions."
+msgstr ""
+"�i programa yra laisva. J�s galite j� platinti ir/arba modifikuoti "
+"remdamiesi tam tikromis s�lygomis."
+
+#: src/cmd_proc.c:32
+msgid "Command: "
+msgstr "Komanda: "
+
+#: src/cmd_proc.c:159
+#, c-format
+msgid "/info: \"%s\" is unknown user"
+msgstr "/info: \"%s\" n�ra vartotoj� sara�e"
+
+#. no nickname specified
+#: src/cmd_proc.c:168
+msgid "/info: no nickname specified"
+msgstr "/info: nenurodytas vartotojo slapyvardis"
+
+#: src/cmd_proc.c:189
+#, c-format
+msgid "/query: \"%s\" is unknown user"
+msgstr "/query: \"%s\" n�ra vartotoj� sara�e"
+
+#. no nickname specified
+#: src/cmd_proc.c:198
+msgid "/query: no nickname specified"
+msgstr "/query: nenurodytas vartotojo slapyvardis"
+
+#. channel name unspecified
+#: src/cmd_proc.c:212
+msgid "/join: Invalid/unspecified channel"
+msgstr "/join: Nenurodytas arba netinkamas kanalo pavadinimas"
+
+#: src/cmd_proc.c:266
+msgid "/topic: topic can be set on channel sessions only"
+msgstr "/topic: tema gali b�ti nurodyta tik kanaluose"
+
+#. "empty" cmd, e.g. `/ mistype param1 param2',
+#. * and not `/correct param1 param2'
+#.
+#: src/cmd_proc.c:434
+msgid "Invalid (empty) command \"/\""
+msgstr "Ne�inoma (arba tu��ia) komanda \"/\""
+
+#: src/cmd_proc.c:443
+#, c-format
+msgid "Invalid/unknown command \"%s\""
+msgstr "Neatpa�inta komanda \"%s\""
+
+#: src/gui_misc.c:102
+msgid "_Send"
+msgstr "_Si�sti"
+
+#: src/gui_misc.c:103
+msgid "_Reply"
+msgstr "At_sakyti"
+
+#: src/gui_misc.c:104
+msgid "_Quote"
+msgstr "_Cituoti"
+
+#: src/gui_ulist.c:156
+msgid "Open chat"
+msgstr "Prad�ti pokalb�"
+
+#: src/gui_ulist.c:163
+msgid "<b>Send message</b>"
+msgstr "<b>Si�sti �inut�</b>"
+
+#. "Beep"
+#: src/gui_ulist.c:168
+msgid "Beep"
+msgstr "�sp�ti garsu"
+
+#: src/gui_ulist.c:174
+msgid "Ignore"
+msgstr "Ignoruoti"
+
+#: src/gui_ulist.c:179
+msgid "Unignore"
+msgstr "Neignoruoti"
+
+#: src/gui_ulist.c:187
+msgid "Remove unreplied"
+msgstr "Pa�alinti neatsakius�"
+
+#: src/gui_ulist.c:218
+msgid "<b>Preferences..</b>"
+msgstr "<b>Nustatymai..</b>"
+
+#: src/gui_ulist.c:248
+msgid "Remove all unreplied"
+msgstr "Pa�alinti visus neatsakiusius"
+
+#: src/gui_ulist.c:261
+msgid "Refresh list"
+msgstr "Atnaujinti s�ra��"
+
+#: src/gui_ulist.c:395
+msgid "day"
+msgstr "diena"
+
+#: src/gui_ulist.c:395
+msgid "days"
+msgstr "dienos"
+
+#: src/gui_ulist.c:396
+msgid "hour"
+msgstr "valanda"
+
+#: src/gui_ulist.c:396
+msgid "hours"
+msgstr "valandos"
+
+#: src/gui_ulist.c:397
+msgid "minute"
+msgstr "minut�"
+
+#: src/gui_ulist.c:397
+msgid "minutes"
+msgstr "minut�s"
+
+#: src/gui_ulist.c:398
+msgid "second"
+msgstr "sekund�"
+
+#: src/gui_ulist.c:398
+msgid "seconds"
+msgstr "sekund�s"
+
+#. show my channels
+#: src/gui_ulist.c:434 src/gui_ulist.c:505
+msgid ""
+"\n"
+"<b>On channels:</b> "
+msgstr ""
+"\n"
+"<b>Kanaluose:</b> "
+
+#: src/gui_ulist.c:481
+#, c-format
+msgid ""
+"\n"
+"<b>Hostname:</b> %s"
+msgstr ""
+"\n"
+"<b>Kompiuteris:</b> %s"
+
+#: src/gui_ulist.c:492
+#, c-format
+msgid ""
+"\n"
+"<b>Idle for:</b> %s"
+msgstr ""
+"\n"
+"<b>Neaktyvus jau:</b> %s"
+
+#: src/gui_ulist.c:498
+#, c-format
+msgid ""
+"\n"
+"<b>IP address:</b> %d.%d.%d.%d"
+msgstr ""
+"\n"
+"<b>IP adresas:</b> %d.%d.%d.%d"
+
+#: src/gui_ulist.c:551
+msgid ""
+"\n"
+"<span foreground=\"#902020\"><i>User is not responding.</i></span>"
+msgstr ""
+"\n"
+"<span�foreground=\"#902020\"><i>Vartotojas neatsako.</i></span>"
+
+#. write the new topic onto the channel page
+#: src/sess.c:100
+#, c-format
+msgid "Topic: \"%s\""
+msgstr "Tema: \"%s\""
+
+#: src/sess.c:202
+#, c-format
+msgid "%s has changed mode to %s"
+msgstr "%s pakeit� b�sen� � \"%s\""
+
+#: src/sess.c:298
+msgid "%s joins %h"
+msgstr "%s prisijung� prie %h"
+
+#: src/sess.c:298
+msgid "%s left %h"
+msgstr "%s paliko %h"
+
+#: src/sess.c:321
+#, c-format
+msgid "%s has opened private chat"
+msgstr "%s prad�jo pokalb�"
+
+#: src/sess.c:327
+#, c-format
+msgid "%s has closed private chat"
+msgstr "%s baig� pokalb�"
+
+#: src/sess.c:370
+msgid "Time-stamp channel text"
+msgstr "�enklinti laiku kanal� tekst�"
+
+#: src/sess.c:373
+msgid "Time-stamp private text"
+msgstr "�enklinti laiku pokalbi� tekst�"
+
+#: src/sess.c:376
+msgid "Time-stamp status text"
+msgstr "�enklinti laiku �vyki� tekst�"
+
+#: src/sess.c:379
+msgid "List of channels that trigger popup on new text"
+msgstr ""
+"Kanal�, kurie i�kvie�ia programos langa, juose atsiradus naujam tekstui, "
+"s�ra�as"
+
+#: src/sess.c:382
+msgid "Suppress rename messages"
+msgstr "Nerodyti slapyvard�io keitimo �inu�i�"
+
+#: src/sess.c:385
+msgid "Suppress mode change messages"
+msgstr "Nerodyti b�senos keitimo �inu�i�"
+
+#: src/sess.c:388
+msgid "Suppress join/leave messages"
+msgstr "Nerodyti prisijungimo ir atsijungimo �inu�i�"
+
+#: src/sess.c:502
+#, c-format
+msgid "Chat with %n has been opened"
+msgstr "Prad�tas pokalbis su %n"
+
+#: src/sess.c:505
+msgid "Joined channel %h"
+msgstr "Prisijungta prie kanalo %h"
+
+#: src/gui.c:108
+#, c-format
+msgid "Network users: %d"
+msgstr "Tinklo vartotojai: %d"
+
+#. the "Chat" submenu
+#.
+#: src/gui.c:169
+msgid "_Chat"
+msgstr "_Pokalbis"
+
+#: src/gui.c:173 src/gui.c:189
+msgid "_Close"
+msgstr "U�daryti"
+
+#. the "Channel" submenu
+#.
+#: src/gui.c:179
+msgid "_Channel"
+msgstr "_Kanalas"
+
+#: src/gui.c:183
+msgid "Set _topic"
+msgstr "Pakeisti _tem�"
+
+#. the "View" submenu
+#.
+#: src/gui.c:195
+msgid "_View"
+msgstr "_Rodyti"
+
+#: src/gui.c:199
+msgid "Show _menu bar"
+msgstr "Rodyti meniu juost�"
+
+#: src/gui.c:204
+msgid "Show _topic bar"
+msgstr "Rodyti temos juost�"
+
+#. the "Settings" submenu
+#.
+#: src/gui.c:211
+msgid "_Settings"
+msgstr "_Nuostatos"
+
+#: src/gui.c:215
+msgid "_Channels.."
+msgstr "Kanalai.."
+
+#: src/gui.c:218
+msgid "_Ignore list.."
+msgstr "Ignoruojam� s�ra�as.."
+
+#: src/gui.c:224
+msgid "_Preferences.."
+msgstr "Nustatymai.."
+
+#. the "Help" submenu
+#.
+#: src/gui.c:230
+msgid "_Help"
+msgstr "_Pagalba"
+
+#: src/gui.c:234
+msgid "_About vqcc-gtk"
+msgstr "_Apie vqcc-gtk"
+
+#. user list
+#: src/gui.c:522
+msgid "Network Users"
+msgstr "Tinklo vartotojai"
+
+#: src/gui.c:669
+#, c-format
+msgid "Private chat with %s"
+msgstr "Pokalbis su %s"
+
+#: src/gui.c:747
+msgid "Keep window size"
+msgstr "I�saugoti lango dyd�"
+
+#: src/gui.c:749
+msgid "Window size"
+msgstr "Lango dydis"
+
+#: src/gui.c:751
+msgid "Present main window when opening private"
+msgstr "I�kelti pagrindin� lang� � priek� prasid�jus pokalbiui"
+
+#: src/gui.c:753
+msgid "Maximum length of the window title"
+msgstr "Maksimalus lango pavadinimo ilgis"
+
+#: src/gui.c:754
+msgid "Show topic bar"
+msgstr "Rodyti temos laukel�"
+
+#: src/gui.c:755
+msgid "Show menu bar"
+msgstr "Rodyti meniu juost�"
+
+#. change title of the message dialog
+#: src/gui_msg.c:196 src/gui_msg.c:312
+#, c-format
+msgid "Message to %s"
+msgstr "�inut� skirta %s"
+
+#: src/gui_msg.c:309
+msgid "Mass message"
+msgstr "Masin� �inut�"
+
+#: src/gui_msg.c:317
+#, c-format
+msgid "Mass message from %s [%s]"
+msgstr "Vie�a �inut� nuo %s: [%s]"
+
+#: src/gui_msg.c:318
+#, c-format
+msgid "Message from %s [%s]"
+msgstr "�inut� nuo %s: [%s]"
+
+#. add option expander
+#: src/gui_msg.c:422
+msgid "_Message options"
+msgstr "�inu�i� nustatymai"
+
+#. add option to save message dialog window size
+#: src/gui_msg.c:440
+msgid "Save message dialog size"
+msgstr "I�saugoti lango dyd�"
+
+#: src/gui_msg.c:532
+#, c-format
+msgid "%s has received your message (%s)"
+msgstr "%s gavo j�s� �inut� (%s)"
+
+#: src/gui_msg.c:537
+#, c-format
+msgid "%s has received your message"
+msgstr "%s gavo j�s� �inut�"
+
+#: src/gui_msg.c:563
+#, c-format
+msgid "Message from %s: %s"
+msgstr "�inut� nuo %s: %s"
+
+#: src/gui_msg.c:671
+#, fuzzy
+msgid "Show messages in windows"
+msgstr "�inutes rodyti atskiruose languose"
+
+#: src/gui_msg.c:673
+msgid "Maximum message windows"
+msgstr "Maksimalus �inu�i� lang� skai�ius"
+
+#: src/gui_msg.c:675
+msgid "CTRL-Enter sends message"
+msgstr "CTRL-Enter i�siun�ia �inut�"
+
+#: src/gui_msg.c:677
+msgid "Message dialog size"
+msgstr "�inut�s lango dydis"
+
+#: src/gui_msg.c:679
+msgid "Receive message when in Offline or DND mode"
+msgstr ""
+
+#: src/idle.c:194
+msgid "Auto-away timeout in minutes"
+msgstr "Pereiti � \"Nutol�s\" po (minu�i�)"
+
+#: src/idle.c:196
+msgid "Auto-offline timeout in minutes"
+msgstr "Pereiti � \"Nepasiekamas\" po (minu�i�)"
+
+#: src/idle.c:199
+msgid "Enter auto-away/auto-offline modes"
+msgstr "Pereiti � auto-away/auto-offline b�senas"
+
+#: src/user.c:307
+msgid "User list update period in seconds"
+msgstr "Atnaujinimo periodas sekund�mis"
+
+#: src/user.c:309
+msgid "Keep unreplied users on the list"
+msgstr "Ne�alinti i� s�ra�o vartotojus, kurie nebeatsako � u�klausas"
+
+#: src/user.c:477
+msgid "Normal"
+msgstr "Pasiekiamas"
+
+#: src/user.c:478
+msgid "DND"
+msgstr "Netrukdyti"
+
+#: src/user.c:479
+msgid "Away"
+msgstr "I��j�s"
+
+#: src/user.c:480
+msgid "Offline"
+msgstr "Nepasiekiamas"
+
+#: src/user.c:481
+msgid "*Dead*"
+msgstr "*I�nyk�s*"
+
+#: src/user.c:482
+msgid "Invisible"
+msgstr "Nematomas"
+
+#: src/user.c:484
+msgid "(undefined)"
+msgstr "(neapra�yta)"
+
+#: src/gui_channel.c:444
+msgid "Channels"
+msgstr "Kanalai"
+
+#: src/gui_channel.c:492
+msgid "_Update"
+msgstr "Atnaujinti"
+
+#: src/gui_channel.c:497
+msgid "_Join"
+msgstr "Prisijungti"
+
+#: src/gui_channel.c:549
+msgid "Channel name"
+msgstr "Kanalo pavadinimas"
+
+#: src/gui_channel.c:560
+msgid "Persistent"
+msgstr "Pastovus"
+
+#: src/gui_channel.c:568
+msgid "Important"
+msgstr "Svarbus"
+
+#: src/gui_page.c:161
+msgid "Set topic.. [CTRL-T]"
+msgstr "Pakeisti tem�.."
+
+#: src/gui_page.c:188
+msgid "Channels.."
+msgstr "Kanalai.."
+
+#: src/gui_page.c:194
+msgid "Ignore list.."
+msgstr "Ignoruojam� s�ra�as.."
+
+#: src/gui_page.c:199 src/gui_tray.c:199
+msgid "Preferences.."
+msgstr "Nustatymai.."
+
+#: src/gui_page.c:206 src/gui_tray.c:208
+msgid "Quit"
+msgstr "U�daryti"
+
+#: src/gui_page.c:540
+msgid "Page tab position"
+msgstr "Lap� korteli� pad�tis"
+
+#: src/gui_page.c:630
+msgid "_Top"
+msgstr "Vir�us"
+
+#: src/gui_page.c:631
+msgid "_Bottom"
+msgstr "Apa�ia"
+
+#: src/gui_page.c:632
+msgid "_Left"
+msgstr "Kair�"
+
+#: src/gui_page.c:633
+msgid "_Right"
+msgstr "De�in�"
+
+#: src/gui_page.c:650
+msgid "Close page [CTRL-W]"
+msgstr "U�daryti lap�"
+
+#. "[*] Persistent"
+#: src/gui_page.c:657
+msgid "_Persistent"
+msgstr "_Pastovus"
+
+#. [*] Important
+#: src/gui_page.c:673
+msgid "_Important"
+msgstr "_Svarbus"
+
+#. automatic detection button
+#: src/gui_config.c:447
+msgid "Detect available networks.."
+msgstr "Aptikti aktyvius tinklus.."
+
+#. add page notebook tab position option
+#. * (the order should be the same as in `enum GtkPositionType')
+#.
+#: src/gui_config.c:607
+msgid "Left"
+msgstr "Kair�"
+
+#: src/gui_config.c:608
+msgid "Right"
+msgstr "De�in�"
+
+#: src/gui_config.c:609
+msgid "Top"
+msgstr "Vir�us"
+
+#: src/gui_config.c:610
+msgid "Bottom"
+msgstr "Apa�ia"
+
+#. create config dlg and setup signals
+#: src/gui_config.c:962 src/prefs.c:38
+msgid "Preferences"
+msgstr "Nustatymai"
+
+#.
+#. * Manual port/network entry frame
+#.
+#: src/gui_config.c:1030 src/gui_netselect_dlg.c:676
+msgid "Network settings"
+msgstr "Tinklo nuostatos"
+
+#: src/gui_config.c:1031
+msgid "User list"
+msgstr "Vartotoj� s�ra�as"
+
+#: src/gui_config.c:1032
+msgid "Pages"
+msgstr "Lapai"
+
+#: src/gui_config.c:1033
+msgid "Messages"
+msgstr "�inut�s"
+
+#: src/gui_config.c:1034
+msgid "Tray icon"
+msgstr "D�kl�s (tray) ikona"
+
+#: src/gui_config.c:1035
+msgid "Idle"
+msgstr "Neaktyvus"
+
+#: src/gui_config.c:1036
+msgid "Miscellaneous"
+msgstr "Kita"
+
+#: src/gui_topic_dlg.c:127
+msgid "Topic:"
+msgstr "Tema:"
+
+#: src/gui_topic_dlg.c:167
+#, c-format
+msgid "Topic for #%s"
+msgstr "Kanalo #%s tema"
+
+#: src/gui_netselect_dlg.c:521
+msgid "Network detection and configuration"
+msgstr "Tinkl� aptikimas ir nustatymas"
+
+#: src/gui_netselect_dlg.c:534
+msgid "Detected networks"
+msgstr "Aptikti tinklai"
+
+#.
+#. * "Automatic scan" frame
+#.
+#: src/gui_netselect_dlg.c:580
+msgid "Automatic scan"
+msgstr "Automatizuota paie�ka"
+
+#: src/gui_netselect_dlg.c:623
+msgid "Scan UDP ports from"
+msgstr "Skenuoti UDP jungtis nuo"
+
+#: src/gui_netselect_dlg.c:635
+msgid "to (including)"
+msgstr "iki (�skaitant)"
+
+#: src/gui_netselect_dlg.c:665
+msgid "Detection settings"
+msgstr "Aptikimo nuostatos"
+
+#: src/gui_about_dlg.c:61
+msgid "Lithuanian"
+msgstr ""
+
+#: src/gui_about_dlg.c:62
+msgid "Russian"
+msgstr ""
+
+#: src/gui_about_dlg.c:122
+#, fuzzy
+msgid "About vqcc-gtk"
+msgstr "_Apie vqcc-gtk"
+
+#. add about text
+#: src/gui_about_dlg.c:187
+msgid ""
+"vqcc-gtk is a chat application written in C for the GTK+ toolkit, primarily "
+"used in small LAN's. Based on quickChat/Vypress Chat (TM) for Windows (from "
+"Vypress Research) and is licensed under the GPL.\n"
+"\n"
+msgstr ""
+
+#. add authors
+#: src/gui_about_dlg.c:194
+msgid "Authors:\n"
+msgstr ""
+
+#. add translator info
+#: src/gui_about_dlg.c:211
+msgid ""
+"\n"
+"Translators:\n"
+msgstr ""
+
+#: src/net.c:44
+msgid "Network"
+msgstr "Tinklas"
+
+#: src/net.c:46
+msgid ""
+"Charset encoding/decoding error; please check \"Network charset\" under the "
+"\"Network\" on the Preferences dialog"
+msgstr ""
+"Teksto kodavimo klaida. Pra�ome pasitikrinti koduot� �vest� \"Tinklo koduot�"
+"\" konfig�racijos lauke, nustatym� dialoge, po \"Tinklas\" kortele"
+
+#: src/net.c:254
+#, c-format
+msgid "host info request from %s"
+msgstr "%s pra�o informacijos apie vartotoj�"
+
+#: src/net.c:274
+msgid "..replied to info request"
+msgstr "..atsakyta � informacijos u�klaus�"
+
+#: src/net.c:348
+#, c-format
+msgid "%s has sent a mass message however you are in %s mode"
+msgstr "%s�i�siunt� masin� �inut�, ta�iau j�s esate b�senoje %s"
+
+#: src/net.c:349
+#, c-format
+msgid "%s has sent you a message however you are in %s mode"
+msgstr "%s�i�siunt� masin� �inut�, ta�iau j�s esate b�senoje %s"
+
+#: src/net.c:360
+#, fuzzy, c-format
+msgid "%s has sent a mass message however you have blocked them"
+msgstr "%s i�siunt�masin��inut�,�ta�iau��iuo metu jas blokuojate"
+
+#: src/net.c:830
+#, c-format
+msgid "Charset encoding \"%s\" is invalid or not supported on this system"
+msgstr "Koduot� \"%s\" neegzistuoja arba n�ra palaikoma �ioje sistemoje"
+
+#: src/net.c:916
+msgid "Network type"
+msgstr "Tinklo prisijungimo tipas"
+
+#: src/net.c:918
+msgid "Network port"
+msgstr "Tinklo jungties numeris"
+
+#: src/net.c:920
+msgid "Network is configured"
+msgstr "Tinklas jau sukonfig�ruotas"
+
+#: src/net.c:922
+msgid "Network broadcast mask"
+msgstr "Tinklo \"broadcast\" mask�"
+
+#: src/net.c:924
+msgid "Use multicast networking"
+msgstr "Naudoti \"multicast\" tinkl�"
+
+#: src/net.c:926
+msgid "Network multicast address"
+msgstr "Tinklo \"multicast\" adresas"
+
+#: src/net.c:928
+msgid "Verbosely report network events"
+msgstr "Detaliai prane�ti apie tinklo �vykius"
+
+#: src/net.c:930
+msgid "Notify channel users on join/leave"
+msgstr "Prane�ti kanalo nariams apie j�s� apsilankym�"
+
+#: src/net.c:932
+msgid "Ignore mass messages"
+msgstr "Ignoruoti masines �inutes"
+
+#: src/net.c:934
+msgid "Network charset encoding"
+msgstr "Tinkle naudojama teskto koduot�"
+
+#: src/net.c:936
+msgid "Reply to user information requests"
+msgstr "Atsakyti � informacijos apie varototoj� u�klausas"
+
+#: src/net.c:938
+msgid "User information text"
+msgstr "Vartotojo informacijos tekstas"
+
+#: src/net.c:940
+msgid "User information text when away"
+msgstr "Informacijos tekstas \"I��j�s\" b�senoje"
+
+#: src/net.c:942
+msgid "Ignored users"
+msgstr "Ignoruojam� vartotoj� s�ra�as"
+
+#: src/net.c:963
+msgid "User is away"
+msgstr "N�ra �alia"
+
+#: src/net.c:1079
+#, c-format
+msgid "failed to connect to %s network on port %hd: %s"
+msgstr "nepavyko prisijungti prie %s tinklo (jungties numeris %hd): %s"
+
+#: src/net.c:1082
+msgid ""
+"check if there are any programs running on the same port and your firewall "
+"settings"
+msgstr ""
+"patikrinkite ar n�ra kit� program�, naudojan�i� t� pat� jungties numer�, "
+"taip pat savo ugniasien�"
+
+#: src/net.c:1097
+#, c-format
+msgid "connected to %s network on port %hd"
+msgstr "prisijungta prie %s tinklo (jungties numeris %hd)"
+
+#: src/gui_ignore.c:340 src/gui_ignore.c:354
+msgid "Ignore list"
+msgstr "Ignoruojam� vartotoj� s�ra�as"
+
+#: src/gui_ignore.c:379
+msgid "_Add"
+msgstr "Papildyti"
+
+#: src/gui_ignore.c:385
+msgid "_Remove"
+msgstr "Pa�alinti"
+
+#: src/gui_ignore.c:391
+msgid "_Clear list"
+msgstr "I�valyti s�ra��"
+
+#. "Send message to >" submenu
+#: src/gui_tray.c:182
+msgid "Message to"
+msgstr "�inut� skirta"
+
+#. "Change mode to >" submenu
+#: src/gui_tray.c:191
+msgid "Set mode"
+msgstr "Nustatyti b�sen�"
+
+#: src/gui_tray.c:388
+msgid "Enable system tray icon"
+msgstr "Naudoti d�kl�s (tray) ikon�"
+
+#: src/gui_tray.c:390
+msgid "Tray blinks when someone joins/leaves a channel"
+msgstr "Ikona mirksi kai ka�kas aplanko arba paliek� kanal�"
+
+#: src/gui_tray.c:392
+msgid "Tray blinks on new channel text"
+msgstr "Ikona mirk�ios atsiradus naujoms kanal� �inut�ms"
+
+#: src/gui_tray.c:394
+msgid "Tray blinks on new private text"
+msgstr "Ikona mirk�ios atsiradus naujam tekstui pokalbi� puslapiuose"
+
+#: src/gui_tray.c:396
+msgid "Tray blinks on new status text"
+msgstr "Ikona mirk�ios atsiradus naujam tekstui B�senos puslapyje"
+
+#: src/gui_tray.c:398
+msgid "Tray blinks on channel topic change"
+msgstr "Ikona mirk�ios pakeitus kanalo tem�"
+
+#: src/gui_tray.c:400
+msgid "Hide main window on startup"
+msgstr "Pasl�pti pagrindin� lang� startavus"
+
+#: src/gui_tray.c:402
+msgid "Number of lines on tray icon tooltip"
+msgstr "Eilu�i� skai�ius d�kl�s ikonos paai�kinime (tooltip)"
+
+#: src/prefs.c:159
+msgid "Save settings on exit"
+msgstr "I�saugoti nustatymus u�darant"
+
+#: src/prefs.c:375
+#, c-format
+msgid "Cannot save configuration settings to file \"%s\": %s"
+msgstr "Nepavyko i�saugoti konfig�racijos nuostat� � fail� \"%s\" (%s)"
+
+#: src/prefs.c:383
+#, c-format
+msgid "Configuration settings were stored in \"%s\""
+msgstr "Konfig�racijos nuostatos buvo i�saugotos faile \"%s\""
+
+#: src/prefs.c:511 src/prefs.c:526
+#, c-format
+msgid "Could not read value for preference \"%s\""
+msgstr "Nepavyko perskaityti nuostatos \"%s\""
+
+#: src/prefs.c:584
+#, c-format
+msgid "Error while reading configuration file \"%s\": %s"
+msgstr "Konfig�racijos failas \"%s\" n�ra pasiekiamas skaitymui (%s)"
+
+#: src/prefs.c:603
+#, c-format
+msgid "Error parsing configuration from \"%s\": %s"
+msgstr "Klaida skaitant konfig�racijos fail� \"%s\": %s"
+
+#: src/prefs.c:626
+#, c-format
+msgid "Cannot open configuration file \"%s\" for reading: %s"
+msgstr "Konfig�racijos failas \"%s\" n�ra pasiekiamas skaitymui (%s)"
+
+#: src/prefs.c:729
+#, c-format
+msgid "Unknown preference value \"%s\""
+msgstr "Ne�inoma nuostatos reik�m� \"%s\""
+
+#~ msgid "Message Text"
+#~ msgstr "�inut�s tekstas"
+
+#~ msgid "Network UDP port number"
+#~ msgstr "Tinklo jungties numeris"
+
+#~ msgid "Network connection type:"
+#~ msgstr "Tinklo prisijungimo tipas:"
+
+#~ msgid "Network charset:"
+#~ msgstr "Tinklo koduotÄĀÄĀ:"
+
+#~ msgid "Port"
+#~ msgstr "Jungties numeris"
+
+#~ msgid "Network type:"
+#~ msgstr "Tinklo prisijungimo tipas:"
+
+#~ msgid "Port number:"
+#~ msgstr "Jungties numeris:"
+
+#~ msgid "Network mask #1"
+#~ msgstr "Tinklo maskÄĀÄĀ nr 1"
+
+#~ msgid "Network mask #2"
+#~ msgstr "Tinklo maskÄĀÄĀ nr 2"
+
+#~ msgid "Cannot join channel #%s: already in"
+#~ msgstr ""
+#~ "JÄĀÄĀĆĀÄĀÄĀÄĀĆĀÄĀ«s jau esate prisijungÄĀÄĀĆĀÄĀÄĀÄĀĆĀÄĀs "
+#~ "prie kanalo #%s"
+
+#~ msgid "Message from %s"
+#~ msgstr "ÄĀÄĀĆĀÄĀÄĀÄĀĆĀÄĀ½inutÄĀÄĀĆĀÄĀÄĀÄĀĆĀÄĀ nuo %s"
+
+#~ msgid "Nickname collision: removing user previously named as %s"
+#~ msgstr "SlapyvardÄĀÄĀĆĀÄĀÄĀÄĀĆĀÄĀ¾iÄĀÄĀĆĀÄĀÄĀÄĀĆĀÄĀ³ susidÄĀÄĀĆĀÄĀÄĀÄĀĆĀÄĀ«rimas: vartotojas %s paÄĀÄĀĆĀÄĀÄĀÄĀĆĀÄĀĆĀÄĀalintas iÄĀÄĀĆĀÄĀÄĀÄĀĆĀÄĀĆĀÄĀ sÄĀÄĀĆĀÄĀÄĀÄĀĆĀÄĀraÄĀÄĀĆĀÄĀÄĀÄĀĆĀÄĀĆĀÄĀo"
+
+#~ msgid "Broadcast mask #2:"
+#~ msgstr "Tinklo \"broadcast mask\" #2:"
+
+#~ msgid "Max messages on the desktop:"
+#~ msgstr "DidÄĀÄĀĆĀÄĀÄĀÄĀĆĀÄĀ¾iausias galimas ÄĀÄĀĆĀÄĀÄĀÄĀĆĀÄĀ¾inuÄĀÄĀĆĀÄĀÄĀÄĀĆĀÄĀiÄĀÄĀĆĀÄĀÄĀÄĀĆĀÄĀ³ langÄĀÄĀĆĀÄĀÄĀÄĀĆĀÄĀ³ skaiÄĀÄĀĆĀÄĀÄĀÄĀĆĀÄĀius:"
+
+#~ msgid "Duplicate Status messages on the active page"
+#~ msgstr "Pakartoti \"BÄĀÄĀĆĀÄĀÄĀÄĀĆĀÄĀ«senos\" lapo praneÄĀÄĀĆĀÄĀÄĀÄĀĆĀÄĀĆĀÄĀimus aktyviame lape"
+
+#~ msgid "Blink icon on Join/Leave events"
+#~ msgstr "MirkÄĀÄĀĆĀÄĀÄĀÄĀĆĀÄĀioti prisijungus/atsijungus"
+
+#~ msgid "Auto away"
+#~ msgstr "Automatiniai reÄĀÄĀĆĀÄĀÄĀÄĀĆĀÄĀ¾imai"
+
+#~ msgid "Could not write to ignore list file (\"%s\"): %s"
+#~ msgstr "Negaliu iÄĀÄĀĆĀÄĀÄĀÄĀĆĀÄĀĆĀÄĀsaugoti ignoruojamÄĀÄĀĆĀÄĀÄĀÄĀĆĀÄĀ³jÄĀÄĀĆĀÄĀÄĀÄĀĆĀÄĀ³ vartotojÄĀÄĀĆĀÄĀÄĀÄĀĆĀÄĀ³ sÄĀÄĀĆĀÄĀÄĀÄĀĆĀÄĀraÄĀÄĀĆĀÄĀÄĀÄĀĆĀÄĀĆĀÄĀo failÄĀÄĀĆĀÄĀÄĀÄĀĆĀÄĀ (\"%s\"): %s"
+
+#~ msgid "Invalid configuration line \"%s\" (%d)"
+#~ msgstr ""
+#~ "Klaida konfigÄĀÄĀĆĀÄĀÄĀÄĀĆĀÄĀ«racijos failo eilutÄĀÄĀĆĀÄĀÄĀÄĀĆĀÄĀje \"%"
+#~ "s\" (Nr %d)"
+
+#~ msgid "Invalid configuration entry name \"%s\" on line %d"
+#~ msgstr ""
+#~ "NeatpaÄĀÄĀĆĀÄĀÄĀÄĀĆĀÄĀ¾ystamas konfigÄĀÄĀĆĀÄĀÄĀÄĀĆĀÄĀ«racijos parametras \"%s\" "
+#~ "eilutÄĀÄĀĆĀÄĀÄĀÄĀĆĀÄĀje nr %d"
+
+#~ msgid "Invalid configuration value (\"%s\") for entry \"%s\""
+#~ msgstr ""
+#~ "Neperskaitoma konfigÄĀÄĀĆĀÄĀÄĀÄĀĆĀÄĀ«racijos reikÄĀÄĀĆĀÄĀÄĀÄĀĆĀÄĀĆĀÄĀmÄĀÄĀĆĀÄĀÄĀÄĀĆĀÄĀ (\"%s\") "
+#~ "parametrui \"%s\""
+
+#~ msgid "Could not open ignore list file \"%s\": %s"
+#~ msgstr "Nepavyko atidaryti ignoruojamÄĀÄĀĆĀÄĀÄĀÄĀĆĀÄĀ³jÄĀÄĀĆĀÄĀÄĀÄĀĆĀÄĀ³ vartotojÄĀÄĀĆĀÄĀÄĀÄĀĆĀÄĀ³ sÄĀÄĀĆĀÄĀÄĀÄĀĆĀÄĀraÄĀÄĀĆĀÄĀÄĀÄĀĆĀÄĀĆĀÄĀo failÄĀÄĀĆĀÄĀÄĀÄĀĆĀÄĀ \"%s\": %s"
+
+#~ msgid "\"%s\" has been inserted into ignore list"
+#~ msgstr ""
+#~ "\"%s\" ÄĀÄĀĆĀÄĀÄĀÄĀĆĀÄĀkeltas "
+#~ "ÄĀÄĀĆĀÄĀÄĀÄĀĆĀÄĀ ignoruojamÄĀÄĀĆĀÄĀÄĀÄĀĆĀÄĀ³jÄĀÄĀĆĀÄĀÄĀÄĀĆĀÄĀ³ sÄĀÄĀĆĀÄĀÄĀÄĀĆĀÄĀraÄĀÄĀĆĀÄĀÄĀÄĀĆĀÄĀĆĀÄĀÄĀÄĀĆĀÄĀÄĀÄĀĆĀÄĀ"
+
+#~ msgid "\"%s\" has been removed from ignore list"
+#~ msgstr "\"%s\" paÄĀÄĀĆĀÄĀÄĀÄĀĆĀÄĀĆĀÄĀalintas iÄĀÄĀĆĀÄĀÄĀÄĀĆĀÄĀĆĀÄĀ ignoruojamÄĀÄĀĆĀÄĀÄĀÄĀĆĀÄĀ³jÄĀÄĀĆĀÄĀÄĀÄĀĆĀÄĀ³ sÄĀÄĀĆĀÄĀÄĀÄĀĆĀÄĀraÄĀÄĀĆĀÄĀÄĀÄĀĆĀÄĀĆĀÄĀo"

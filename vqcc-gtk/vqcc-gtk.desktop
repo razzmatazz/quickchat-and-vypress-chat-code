@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=vqcc-gtk Chat Client
+Comment=quickChat/Vypress Chat clone for GTK+
+Exec=vqcc-gtk
+Icon=vqcc-gtk.png
+Terminal=false
+Type=Application
+Categories=Application;Network;
+StartupNotify=true

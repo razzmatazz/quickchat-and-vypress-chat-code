@@ -1,0 +1,46 @@
+$Id: TODO,v 1.110 2005/01/08 17:11:25 bobas Exp $
+
+=== FEATURES PENDING for post-1.0 ===
+=====================================
+huge	move to GtkMM ??
+
+=== FEATURES PENDING for 0.6 ===
+================================
+feat	merge the gui_page and sess.c,
+feat	introduce our own lightweight text widget;
+feat	font change dialog;
+
+feat	save main window's separator position;
+feat	iconify message windows when user is in dnd/offline mode;
+feat	multiple broadcast masks;
+feat	sending of mass messages;
+feat	option to hide new messages until the tray is clicked;
+feat	don't hide dialog of the message being sent until we get confirmation;
+feat	"help";
+feat	sound support;
+feat	X11 session save/restore support (this depends on GNOME libs);
+feat	nickname/channel autocompletion;
+feat	multiple charset support (take a look on new vypress chat protocol);
+minor	popup topic change dialog when double clicked on channel text;
+	message when double clicked on private text;
+	preferences dialog when clicked on status text;
+minor	take a look at VyQChat and the it's feature list;
+	0.2.7 has updated support for Vypress Chat 1.9 protocol;
+feat	matching of text with regular expressions;
+feat	packet xor'ing for security;
+minor	widget tooltips where appropriate;
+feat 	extract and hilight (at least) url/smb references in text messages;
+feat	channel/private-chat logs;
+feat	a shortcut key to popup main window from the systray;
+feat	an option to suppress selected types of text messages
+	(joins, mode changes, etc);
+minor	use srand(time(NULL)) to seed random number generator for BSD always
+	initializes to the same value;
+feat	colorize nicknames on channels;
+feat	fast nickname search on user list;
+feat	show more info about the user (netbios name/workgroup);
+feat	colorize message quoted text;
+feat	use the `/here' protocol feature to query users on a channel when joining;
+
+=== FEATURES PENDING for 0.5 ===
+================================

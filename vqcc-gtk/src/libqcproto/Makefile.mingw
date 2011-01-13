@@ -1,0 +1,24 @@
+TARGET = libqcproto.a
+CC = gcc -mno-cygwin -mwindows -mms-bitfields -g -Wall
+
+all:	$(TARGET)
+
+O_FILES = link.o p_qchat.o p_vypress.o supp.o
+
+$(TARGET): $(O_FILES)
+	$(AR) r $(TARGET) $(O_FILES)
+
+link.o:	link.c
+	$(CC) -c link.c -o link.o
+
+p_qchat.o: p_qchat.c
+	$(CC) -c p_qchat.c -o p_qchat.o
+
+p_vypress.o: p_vypress.c
+	$(CC) -c p_vypress.c -o p_vypress.o
+
+supp.o:	supp.c
+	$(CC) -c supp.c -o supp.o
+
+clean:
+	rm -f *.o *.a

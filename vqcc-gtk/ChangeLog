@@ -1,0 +1,88 @@
+$Id: ChangeLog,v 1.62 2005/01/08 17:11:25 bobas Exp $
+
+--- v0.5 (01/08/2005)
+	* an option whether to suppress a messages when in dnd/offline mode;
+	* system tray and idle (autoaway/auto-offline) functionality on win32;
+	* russian translation has been added (Paul Petruk);
+	* support for beep alerts (no real sound yet);
+	* support for multicast networking for the Vypress Chat protocol (Bryan Holty);
+	* options added to suppress mode change, rename, join and leave messages in channels;
+	* the size of message dialog can be set;
+	* channels can be tagged as "important" which means the vqcc-gtk
+	  window will popup when new text appears on the tagged channel (Bryan Holty);
+	* ability to disable the auto-away functionality (thanks to Mircea Suciu);
+	* network detection dialog now works on win32 build too;
+	* main application menu is implemented (can be hidden);
+	* shows idle time on user info tooltip;
+	* user state is now apparent from the tray icon;
+	* pages can be closed with a popup menu on page notebook handle;
+	* a message can be sent via tray icon's "Message to" submenu;
+	* added channel topic bar (can be set to show on the window title, via prefs);
+	* configuration is now stored in XML format, in "~/.vqcc.conf.xml"
+	  (you can remove the files "~/.vqcc.ignore" and "~/.vqcc.conf" now);
+	* lots of bugfixes;
+
+--- v0.4.2 (09/09/2004)
+	* make vqcc-gtk build on win32 again;
+
+--- v0.4.1 (08/31/2004)
+	* a really ugly bug where text could not get entered into the text box
+	  at the bottom fixed (thanks mustafaogun);
+
+--- v0.4 (08/28/2004)
+	* popups network detection/configuration dialog on first startup and in cases when network error occurs;
+	* shows IP address on user info tooltip;
+	* uses startup notification to notify desktop environment when startup is complete;
+	* application shortcut & icon is copied to appropriate places during installation;
+	* fixed a bug where vqcc-gtk segfaulted when showing preferences dialog (thanks Cass Evert);
+	* user list can be refreshed via it's popup menu; unreplied users can get removed too;
+	* dead users can be removed from the list with the help of context menu;
+	* network charset encoding can be selected from the list (when GTK+ is 2.4+) */
+	* user of the application gets shown on the user list too;
+	* added "invisible" user mode (suppresses replies to refresh requests; hides user when joining/leaving a channel);
+	* added support for persistent channels (a checkbox in "Channel list" dialog);
+	* shows the main vqcc-gtk window if the systray icon could not get shown on notification area or the area had disappeared;
+	* page text is now wrapped on character basis;
+	* increased max topic and message length to 1023 chars;
+	* an option to block mass messages was added;
+	* "Quote" button has been added to the message dialog;
+	* various bugfixes and refinements;
+
+--- v0.3 (04/12/2004)
+	* bug fixed where vqcc-gtk considered nicknames case-insenstive, resulting in user clashes;
+	* compiles and runs on win32 (no i18n, no system tray icon, though);
+	* an option to specify motd (user info request text) in normal/offline modes;
+	* shows last messages in a tooltip when hovering over systray icon;
+	* miscellaneous english string style fixes;
+	* bug fixed where vqcc-gtk forgot to send confirmation for the message it has received;
+	* lithuanian translation;
+	* i18n'ed with gettext (includes Lithuanian translation);
+	* network charset encoding can be specified (defaults to "ISO-8859-1");
+	* channel topic text is now shown on title bar; use Ctrl-T to popup the topic change dialog;
+	* an option to hide main window on startup (when tray is enabled);
+	* ability to select which events make the tray icon to blink;
+	* an option to present main window on new private chat;
+	* refactored config dialog (with pages);
+	* Ctrl-W closes active page;
+	* messages no longer hide under other windows when clicked on `Reply' button (at least on Gnome2/metacity);
+
+--- v0.2pre1 (03/01/2004)
+	* fix segfault when blinking page icon of a dead user;
+	* can save & restore window size;
+	* autotoolized;
+	* show the main window if the tray has been lost;
+	* vqcc-gtk has its own logo image (hopefully will be updated soon);
+	* fix user mode change handling for message dialogs;
+	* restart is no longer needed to change network type/port;
+	* pages can be switched using either alt+'-'/'=' or ctrl+'page up'/'page down';
+	* user-info-request dialog is now implemented as a user list tooltip;
+	* page tab bar position can be changed via configuration dialog;
+	* inactive users are 'darkened' on the user list;
+	* standard stock icons from GTK+ for OK/Cancel, etc;
+	* system tray (notification area) icon on X11 (GNOME/KDE/freedesktop.org compatible);
+	* fix segfault when switching active tab while the topic has focus;
+	* user list is now sorted properly;
+	* localized strings from the network now are handled properly;
+
+--- v0.1 (12/18/2003)
+	* [ChangeLog commited]

@@ -1,0 +1,73 @@
+gdkpixbufcsourcepath = gdk-pixbuf-csource
+srcdir = .
+
+BUILT_SOURCES = traypixbufs.h stockpixbufs.h vqcc-gtk-large-pixbuf.h
+
+DISTRIBUTION_IMAGES = \
+	$(srcdir)/vqcc-gtk.png \
+	$(srcdir)/winicon16.ico	$(srcdir)/winicon16-act.ico
+
+
+INLINE_IMAGES = \
+	$(srcdir)/icon_channel.xpm \
+	$(srcdir)/icon_channel_inactive.png \
+	$(srcdir)/icon_status.xpm \
+	$(srcdir)/icon_status_inactive.png \
+	$(srcdir)/icon_reply.xpm \
+	$(srcdir)/icon_reply_button.xpm \
+	$(srcdir)/icon_send.xpm \
+	$(srcdir)/icon_send_button.xpm \
+	$(srcdir)/icon_quote.xpm \
+	$(srcdir)/icon_quote_button.xpm \
+	$(srcdir)/icon_user_tag_away.png \
+	$(srcdir)/icon_user_tag_dnd.png \
+	$(srcdir)/icon_user_tag_offline.png \
+	$(srcdir)/icon_user_dead.xpm \
+	$(srcdir)/icon_user_normal.xpm \
+	$(srcdir)/icon_user_invisible.png \
+	$(srcdir)/icon_user_inactive.xpm \
+	$(srcdir)/logo_24_act.png \
+	$(srcdir)/logo_24.png \
+	$(srcdir)/logo_32.png \
+	$(srcdir)/logo_48.png \
+	$(srcdir)/vqcc-gtk-large.png
+
+STOCK_PIXBUF_MAP = \
+	pixbuf_icon_channel		$(srcdir)/icon_channel.xpm \
+	pixbuf_icon_channel_inactive	$(srcdir)/icon_channel_inactive.png \
+	pixbuf_icon_status		$(srcdir)/icon_status.xpm \
+	pixbuf_icon_status_inactive	$(srcdir)/icon_status_inactive.png \
+	pixbuf_icon_reply		$(srcdir)/icon_reply.xpm \
+	pixbuf_icon_reply_button	$(srcdir)/icon_reply_button.xpm \
+	pixbuf_icon_send		$(srcdir)/icon_send.xpm \
+	pixbuf_icon_send_button		$(srcdir)/icon_send_button.xpm \
+	pixbuf_icon_quote		$(srcdir)/icon_quote.xpm \
+	pixbuf_icon_quote_button	$(srcdir)/icon_quote_button.xpm \
+	pixbuf_icon_user_tag_away	$(srcdir)/icon_user_tag_away.png \
+	pixbuf_icon_user_tag_dnd	$(srcdir)/icon_user_tag_dnd.png \
+	pixbuf_icon_user_tag_offline 	$(srcdir)/icon_user_tag_offline.png \
+	pixbuf_icon_user_dead		$(srcdir)/icon_user_dead.xpm \
+	pixbuf_icon_user_normal		$(srcdir)/icon_user_normal.xpm \
+	pixbuf_icon_user_invisible	$(srcdir)/icon_user_invisible.png \
+	pixbuf_icon_user_inactive	$(srcdir)/icon_user_inactive.xpm \
+	pixbuf_logo_24			$(srcdir)/logo_24.png \
+	pixbuf_logo_32			$(srcdir)/logo_32.png \
+	pixbuf_logo_48			$(srcdir)/logo_48.png
+
+TRAY_PIXBUF_MAP = \
+	pixbuf_logo_24_act	$(srcdir)/logo_24_act.png \
+	pixbuf_logo_24		$(srcdir)/logo_24.png
+
+VQCC_GTK_LARGE_MAP = \
+	vqcc_gtk_large		$(srcdir)/vqcc-gtk-large.png
+
+all:	stockpixbufs.h vqcc-gtk-large-pixbuf.h
+
+stockpixbufs.h: $(INLINE_IMAGES)
+	$(gdkpixbufcsourcepath) --raw --build-list $(STOCK_PIXBUF_MAP) > $(srcdir)/stockpixbufs.h
+
+vqcc-gtk-large-pixbuf.h: $(INLINE_IMAGES)
+	$(gdkpixbufcsourcepath) --raw --build-list $(VQCC_GTK_LARGE_MAP) > $(srcdir)/vqcc-gtk-large-pixbuf.h
+
+clean:
+	rm -f $(BUILT_SOURCES)

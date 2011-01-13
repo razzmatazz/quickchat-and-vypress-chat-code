@@ -1,0 +1,120 @@
+TARGET = vqcc-gtk.exe
+
+CC = gcc -mms-bitfields -mwindows -mno-cygwin -g -Wall -Werror
+CC_OPT = $(shell pkg-config --cflags gtk+-2.0) -I.. -DHAVE_CONFIG_H -DGETTEXT_PACKAGE=\"vqcc-gtk\"
+CC_LINK =  -v $(shell pkg-config --libs gtk+-2.0) -lws2_32
+
+
+O_FILES = cmd_proc.o \
+	gui.o \
+	gui_channel.o \
+	gui_config.o \
+	gui_ignore.o \
+	gui_misc.o \
+	gui_msg.o \
+	gui_page.o \
+	gui_topic_dlg.o \
+	gui_netselect_dlg.o \
+	gui_about_dlg.o \
+	gui_ulist.o \
+	idle.o \
+	main.o \
+	net.o \
+	prefs.o \
+	sess.o \
+	user.o \
+	util.o \
+	gui_tray.o \
+	gui_tray_win32.o \
+	win32.o \
+	win32_resource.o
+
+LIB_FILES = libqcproto/libqcproto.a
+
+WIN_RESOURCE_FILES = \
+	../pixmaps/winicon16.ico \
+	../pixmaps/winicon16-act.ico
+
+$(TARGET): $(O_FILES) $(LIB_FILES)
+	$(MAKE) -C libqcproto -f Makefile.mingw
+	$(CC) $(O_FILES) $(LIB_FILES) -o $(TARGET) $(CC_LINK)
+
+libqcproto/libqcproto.a:
+	$(MAKE) -C libqcproto -f Makefile.mingw
+
+win32_resource.o: win32_resource.h win32_resource.rc $(WIN_RESOURCE_FILES)
+	windres -i win32_resource.rc -o win32_resource.o
+
+cmd_proc.o: cmd_proc.c
+	$(CC) $(CC_OPT) -c cmd_proc.c -o cmd_proc.o
+
+gui.o: gui.c
+	$(CC) $(CC_OPT) -c gui.c -o gui.o
+
+gui_channel.o: gui_channel.c
+	$(CC) $(CC_OPT) -c gui_channel.c -o gui_channel.o
+
+gui_config.o: gui_config.c
+	$(CC) $(CC_OPT) -c gui_config.c -o gui_config.o
+
+gui_ignore.o: gui_ignore.c
+	$(CC) $(CC_OPT) -c gui_ignore.c -o gui_ignore.o
+
+gui_misc.o: gui_misc.c
+	$(CC) $(CC_OPT) -c gui_misc.c -o gui_misc.o
+
+gui_msg.o: gui_msg.c
+	$(CC) $(CC_OPT) -c gui_msg.c -o gui_msg.o
+
+gui_page.o: gui_page.c
+	$(CC) $(CC_OPT) -c gui_page.c -o gui_page.o
+
+gui_topic_dlg.o: gui_topic_dlg.c
+	$(CC) $(CC_OPT) -c gui_topic_dlg.c -o gui_topic_dlg.o
+
+gui_netselect_dlg.o: gui_netselect_dlg.c
+	$(CC) $(CC_OPT) -c gui_netselect_dlg.c -o gui_netselect_dlg.o
+
+gui_about_dlg.o: gui_about_dlg.c
+	$(CC) $(CC_OPT) -c gui_about_dlg.c -o gui_about_dlg.o
+
+gui_tray.o: gui_tray.c
+	$(CC) $(CC_OPT) -c gui_tray.c -o gui_tray.o
+
+gui_tray_win32.o: gui_tray_win32.c
+	$(CC) $(CC_OPT) -c gui_tray_win32.c -o gui_tray_win32.o
+
+gui_ulist.o: gui_ulist.c
+	$(CC) $(CC_OPT) -c gui_ulist.c -o gui_ulist.o
+
+idle.o: idle.c
+	$(CC) $(CC_OPT) -c idle.c -o idle.o
+
+main.o: main.c
+	$(CC) $(CC_OPT) -c main.c -o main.o
+
+net.o: net.c
+	$(CC) $(CC_OPT) -c net.c -o net.o
+
+prefs.o: prefs.c
+	$(CC) $(CC_OPT) -c prefs.c -o prefs.o
+
+sess.o: sess.c
+	$(CC) $(CC_OPT) -c sess.c -o sess.o
+
+user.o: user.c
+	$(CC) $(CC_OPT) -c user.c -o user.o
+
+util.o: util.c
+	$(CC) $(CC_OPT) -c util.c -o util.o
+
+win32.o: win32.c
+	$(CC) $(CC_OPT) -c win32.c -o win32.o
+
+clean:
+	$(MAKE) -C libqcproto -f Makefile.mingw clean
+	rm -f *.o
+	rm -f $(TARGET)
+
+strip:
+	strip $(TARGET)
